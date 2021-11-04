@@ -14,7 +14,7 @@ const Person = ({ person, isFetching, error, dispatch }) => {
   }
 
   if (isFetching) {
-    return <h2>Fetching person for ya!</h2>;
+    return <h2>Fetching a name</h2>;
   }
 
 
@@ -22,12 +22,13 @@ const Person = ({ person, isFetching, error, dispatch }) => {
     dispatch(getPerson());
    
   }
+  console.log(person.age)
 
   return (
     <>
       <div>
         <h2>Say Hi to: {person.age} {person.count}</h2>
-        <img src={person.name}/>
+       
       </div>
       <button onClick={handleClick}>Get new person</button>
     </>
