@@ -3,9 +3,9 @@ import { FETCH_START, FETCH_SUCCESS, FETCH_ERROR } from './../actions';
 const initialState = {
   person: {
     
-      name: "",
-      age: null,
-      count: 0
+      'name': "",
+      'age': null,
+      'count': 0
     
   
   },

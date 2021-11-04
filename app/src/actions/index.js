@@ -6,7 +6,9 @@ export const getPerson = ()=> {
 
         axios.get('https://api.agify.io?name=bella/')
           .then(resp=> {
-            dispatch(fetchSuccess(resp));
+            dispatch(fetchSuccess(resp.data));
+            console.log(`${resp} resp`);
+            
         })
         .catch(err => {
             dispatch(fetchError(err));

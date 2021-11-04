@@ -12,7 +12,7 @@ import App from './App';
 import { reducer } from './reducers';
 
 const store = createStore(reducer, applyMiddleware(logger, thunk));
-
+console.log(`${store} store`);
 const rootElement = document.getElementById('root');
 ReactDOM.render(
   <Provider store={store}>

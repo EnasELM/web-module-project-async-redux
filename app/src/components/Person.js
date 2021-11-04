@@ -22,12 +22,12 @@ const Person = ({ person, isFetching, error, dispatch }) => {
     dispatch(getPerson());
    
   }
-  console.log(person.age)
+ 
 
   return (
     <>
       <div>
-        <h2>Say Hi to: {person.age} {person.count}</h2>
+        <h2> Hi I AM {person.name} </h2>
        
       </div>
       <button onClick={handleClick}>Get new person</button>
