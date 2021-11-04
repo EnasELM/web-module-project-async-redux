@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 
-import { fetchError, getPerson } from '../actions';
+import { fetchError, getPerson } from './../actions';
 
 const Person = ({ person, isFetching, error, dispatch }) => {
 
@@ -26,8 +26,8 @@ const Person = ({ person, isFetching, error, dispatch }) => {
   return (
     <>
       <div>
-        <h2>Say Hi to: {person.name} {person.name.age}</h2>
-      
+        <h2>Say Hi to: {person.name} {person.age}</h2>
+       
       </div>
       <button onClick={handleClick}>Get new person</button>
     </>
